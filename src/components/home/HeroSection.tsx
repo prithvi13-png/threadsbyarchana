@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-main.jpg";
 import Container from "../common/Container";
 import { SITE_CONFIG } from "@/data/siteConfig";
 
@@ -7,8 +6,8 @@ const HeroSection = () => (
   <section className="relative min-h-[90vh] md:min-h-screen flex items-center bg-foreground overflow-hidden -mt-16 md:-mt-20 pt-16 md:pt-20">
     {/* Background image */}
     <div className="absolute inset-0">
-      <img src={heroImage} alt="Threads by Archana traditional fashion" className="w-full h-full object-cover" width={1024} height={1280} />
-      <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />
+      <img src="/boutique/ssareee1.jpeg" alt="Threads by Archana traditional fashion" className="w-full h-full object-cover object-[35%_top] md:object-top" width={1600} height={1200} />
+      <div className="absolute inset-0 bg-gradient-to-r from-foreground/45 via-foreground/15 to-transparent" />
     </div>
 
     <Container className="relative z-10 py-20 md:py-0">

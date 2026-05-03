@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import signatureImg from "@/assets/signature-collection.jpg";
 import Container from "../common/Container";
 
 const SignatureCollection = () => (
@@ -7,12 +6,12 @@ const SignatureCollection = () => (
     <Container>
       <div className="relative rounded-lg overflow-hidden">
         <img
-          src={signatureImg}
+          src="/boutique/saree4.jpeg"
           alt="Threads by Archana Signature Collection"
           loading="lazy"
-          className="w-full h-[50vh] md:h-[70vh] object-cover"
+          className="w-full h-[50vh] min-h-[360px] md:h-[70vh] object-cover object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-foreground/45 via-foreground/10 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-8 md:p-14">
           <p className="text-accent font-sans text-xs tracking-[0.3em] uppercase mb-3">Signature Edit</p>
           <h2 className="font-serif text-3xl md:text-5xl text-primary-foreground mb-4">

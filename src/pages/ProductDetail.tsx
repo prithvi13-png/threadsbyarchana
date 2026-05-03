@@ -36,14 +36,13 @@ const ProductDetail = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14">
             {/* Image */}
             <div className="rounded-lg overflow-hidden bg-secondary aspect-[3/4]">
-              <img src={product.images[0]} alt={product.name} className="w-full h-full object-cover" />
+              <img src={product.images[0]} alt={product.name} className="w-full h-full object-cover object-top" />
             </div>
 
             {/* Info */}
             <div className="flex flex-col justify-center">
               <p className="text-xs text-muted-foreground font-sans uppercase tracking-wider mb-2">{product.category}</p>
               <h1 className="font-serif text-3xl md:text-4xl text-foreground mb-3">{product.name}</h1>
-              <p className="text-xl font-serif text-foreground mb-6">{product.price}</p>
 
               <p className="text-muted-foreground font-light leading-relaxed mb-8">{product.description}</p>
 
@@ -64,7 +63,7 @@ const ProductDetail = () => {
 
               {product.available && (
                 <p className="text-xs text-muted-foreground mb-6 border-t border-border pt-4">
-                  For availability and orders, contact us directly.
+                  For details, availability, and orders, contact us directly on WhatsApp.
                 </p>
               )}
 

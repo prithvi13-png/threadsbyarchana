@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import aboutImg from "@/assets/about-boutique.jpg";
 import Container from "../common/Container";
 
 const AboutPreview = () => (
@@ -7,7 +6,7 @@ const AboutPreview = () => (
     <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
         <div className="rounded-lg overflow-hidden">
-          <img src={aboutImg} alt="Threads by Archana boutique" loading="lazy" className="w-full h-80 md:h-[500px] object-cover rounded-lg" />
+          <img src="/boutique/dress77.jpeg" alt="Threads by Archana boutique" loading="lazy" className="w-full h-80 md:h-[500px] object-cover object-top rounded-lg" />
         </div>
         <div>
           <p className="text-accent-foreground font-sans text-xs tracking-[0.3em] uppercase mb-3">Our Story</p>

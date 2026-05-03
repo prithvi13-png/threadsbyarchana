@@ -6,7 +6,7 @@ export interface FAQ {
 export const faqs: FAQ[] = [
   {
     question: "How do I place an order?",
-    answer: "You can place an order by contacting us directly via WhatsApp or phone call. Browse our collections, choose the pieces you love, and reach out to us for pricing, availability, and order confirmation.",
+    answer: "You can place an order by contacting us directly via WhatsApp or phone call. Browse our collections, choose the pieces you love, and reach out to us for availability and order confirmation.",
   },
   {
     question: "Can I order through WhatsApp?",

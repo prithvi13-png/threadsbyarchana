@@ -20,9 +20,11 @@ const Footer = () => (
           <nav className="flex flex-col gap-2.5">
             {[
               { label: "Home", href: "/" },
-              { label: "Collections", href: "/collections" },
               { label: "About Us", href: "/about" },
-              { label: "Contact", href: "/contact" },
+              { label: "Services", href: "/services" },
+              { label: "Collections", href: "/collections" },
+              { label: "Gallery", href: "/gallery" },
+              { label: "Contact Us", href: "/contact" },
             ].map((link) => (
               <Link key={link.href} to={link.href} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 {link.label}
@@ -35,9 +37,14 @@ const Footer = () => (
         <div>
           <h4 className="font-sans text-xs tracking-widest uppercase mb-4 text-primary-foreground/50">Collections</h4>
           <nav className="flex flex-col gap-2.5">
-            {["Sarees", "Kurtis & Suits", "Lehengas", "Anarkalis", "Festive Wear", "Bridal Wear"].map((cat) => (
-              <Link key={cat} to={`/collections/${cat.toLowerCase().replace(" ", "-")}`} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                {cat}
+            {[
+              { label: "Bridal Collection", href: "/collections/bridal-collection" },
+              { label: "Festive Collection", href: "/collections/festive-collection" },
+              { label: "Kids Collection", href: "/collections/kids-collection" },
+              { label: "Women's Collection", href: "/collections/womens-collection" },
+            ].map((cat) => (
+              <Link key={cat.href} to={cat.href} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                {cat.label}
               </Link>
             ))}
           </nav>

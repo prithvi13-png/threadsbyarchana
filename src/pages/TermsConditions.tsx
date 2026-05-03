@@ -7,8 +7,8 @@ const TermsConditions = () => (
       <div className="prose prose-sm max-w-none text-muted-foreground font-light leading-relaxed space-y-6">
         <p>By accessing and using the Threads by Archana website, you agree to be bound by these terms and conditions.</p>
         
-        <h2 className="font-serif text-xl text-foreground mt-8 mb-3">Products & Pricing</h2>
-        <p>All products displayed on this website are part of our curated catalogue. Prices are indicative and may vary. Some items are listed as "Price on Request" — please contact us for current pricing.</p>
+        <h2 className="font-serif text-xl text-foreground mt-8 mb-3">Products & Enquiries</h2>
+        <p>All products displayed on this website are part of our curated catalogue. Please contact us on WhatsApp for current availability, product details, and order enquiries.</p>
         
         <h2 className="font-serif text-xl text-foreground mt-8 mb-3">Ordering</h2>
         <p>Orders are placed directly via phone or WhatsApp. This website does not process online payments or orders. All orders are subject to availability and confirmation by our team.</p>

@@ -1,9 +1,4 @@
-import categorySarees from "@/assets/category-sarees.jpg";
-import categoryKurtis from "@/assets/category-kurtis.jpg";
-import categoryLehengas from "@/assets/category-lehengas.jpg";
-import categoryFestive from "@/assets/category-festive.jpg";
-import categoryPartywear from "@/assets/category-partywear.jpg";
-import categoryGowns from "@/assets/category-gowns.jpg";
+import { boutiqueImage } from "./products";
 
 export interface Category {
   id: string;
@@ -17,50 +12,34 @@ export interface Category {
 export const categories: Category[] = [
   {
     id: "1",
-    slug: "sarees",
-    name: "Sarees",
-    subtitle: "Timeless Drapes",
-    image: categorySarees,
-    description: "Discover our curated collection of premium sarees, from classic silks to contemporary designs.",
+    slug: "bridal-collection",
+    name: "Bridal Collection",
+    subtitle: "Wedding Elegance",
+    image: boutiqueImage("saree6.jpeg"),
+    description: "A curated bridal edit with rich drapes, elegant detailing, and statement occasion wear.",
   },
   {
     id: "2",
-    slug: "kurtis",
-    name: "Kurtis & Suits",
-    subtitle: "Effortless Grace",
-    image: categoryKurtis,
-    description: "Elegant kurtis and salwar suits crafted with attention to detail for everyday sophistication.",
+    slug: "festive-collection",
+    name: "Festive Collection",
+    subtitle: "Celebrate in Style",
+    image: boutiqueImage("ssareee1.jpeg"),
+    description: "Vibrant festive pieces for poojas, family functions, celebrations, and special occasions.",
   },
   {
     id: "3",
-    slug: "lehengas",
-    name: "Lehengas",
-    subtitle: "Bridal Elegance",
-    image: categoryLehengas,
-    description: "Exquisite lehengas for your most special moments, designed with love and craftsmanship.",
+    slug: "kids-collection",
+    name: "Kids Collection",
+    subtitle: "Little Celebrations",
+    image: boutiqueImage("whatsapp-2026-04-30.jpeg"),
+    description: "Beautiful festive outfits for children, designed for comfort, celebration, and memorable photos.",
   },
   {
     id: "4",
-    slug: "anarkalis",
-    name: "Anarkalis",
-    subtitle: "Royal Silhouettes",
-    image: categoryGowns,
-    description: "Flowing anarkali suits that bring regal charm to every occasion.",
-  },
-  {
-    id: "5",
-    slug: "festive-wear",
-    name: "Festive Wear",
-    subtitle: "Celebrate in Style",
-    image: categoryFestive,
-    description: "Rich, vibrant festive wear that honours tradition with a modern touch.",
-  },
-  {
-    id: "6",
-    slug: "bridal-wear",
-    name: "Bridal Wear",
-    subtitle: "Your Dream Look",
-    image: categoryPartywear,
-    description: "Stunning bridal ensembles for your most cherished day.",
+    slug: "womens-collection",
+    name: "Women's Collection",
+    subtitle: "Everyday Grace",
+    image: boutiqueImage("dress2.jpeg"),
+    description: "Elegant dresses, kurtis, suit sets, and sarees for women who love refined traditional style.",
   },
 ];

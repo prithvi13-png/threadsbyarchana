@@ -23,10 +23,10 @@ const CategoryPage = () => {
   return (
     <>
       {/* Banner */}
-      <section className="relative py-20 md:py-28">
+      <section className="relative min-h-[320px] md:min-h-[420px] flex items-center">
         <div className="absolute inset-0">
-          <img src={cat.image} alt={cat.name} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-foreground/60" />
+          <img src={cat.image} alt={cat.name} className="w-full h-full object-cover object-top" />
+          <div className="absolute inset-0 bg-foreground/35" />
         </div>
         <Container className="relative z-10 text-center">
           <h1 className="font-serif text-4xl md:text-5xl text-primary-foreground mb-3">{cat.name}</h1>

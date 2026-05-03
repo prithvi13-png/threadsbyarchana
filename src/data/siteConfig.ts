@@ -8,15 +8,33 @@ export const SITE_CONFIG = {
   instagram: "https://instagram.com/threadsbyarchana",
   instagramHandle: "@threadsbyarchana",
   address: "Kismatpur, Hyderabad, Telangana",
-  currency: "₹",
 };
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Collections", href: "/collections" },
-  { label: "New Arrivals", href: "/collections?filter=new" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "About Us", href: "/about" },
+  {
+    label: "Services",
+    href: "/services",
+    children: [
+      { label: "Customized Tailoring", href: "/services" },
+      { label: "Bridal & Festive Wear Designing", href: "/services" },
+      { label: "Embroidery & Maggam Work", href: "/services" },
+      { label: "Kids & Women's Wear", href: "/services" },
+    ],
+  },
+  {
+    label: "Collections",
+    href: "/collections",
+    children: [
+      { label: "Bridal Collection", href: "/collections/bridal-collection" },
+      { label: "Festive Collection", href: "/collections/festive-collection" },
+      { label: "Kids Collection", href: "/collections/kids-collection" },
+      { label: "Women's Collection", href: "/collections/womens-collection" },
+    ],
+  },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export const ANNOUNCEMENTS = [

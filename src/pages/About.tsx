@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 import Container from "@/components/common/Container";
-import aboutImg from "@/assets/about-boutique.jpg";
-import heroImg from "@/assets/signature-collection.jpg";
 import ContactCTA from "@/components/home/ContactCTA";
 
 const About = () => (
   <>
     {/* Banner */}
-    <section className="relative py-20 md:py-28">
+    <section className="relative min-h-[320px] md:min-h-[420px] flex items-center">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="About Threads by Archana" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-foreground/60" />
+        <img src="/boutique/saree44.jpeg" alt="About Threads by Archana" className="w-full h-full object-cover object-top" />
+        <div className="absolute inset-0 bg-foreground/35" />
       </div>
       <Container className="relative z-10 text-center">
         <h1 className="font-serif text-4xl md:text-5xl text-primary-foreground mb-3">About Us</h1>
@@ -35,7 +33,7 @@ const About = () => (
             </p>
           </div>
           <div className="rounded-lg overflow-hidden">
-            <img src={aboutImg} alt="Inside Threads by Archana" loading="lazy" className="w-full h-80 md:h-[500px] object-cover rounded-lg" />
+            <img src="/boutique/saree55.jpeg" alt="Inside Threads by Archana" loading="lazy" className="w-full h-80 md:h-[500px] object-cover object-top rounded-lg" />
           </div>
         </div>
 
